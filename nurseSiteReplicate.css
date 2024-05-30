@@ -1,0 +1,1844 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+  
+       
+        @font-face {
+            font-family: eSolutionFont;
+            src: url(<?php echo Yii::$app->request->baseUrl. '/themes/inia.otf'?>);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body, button, h1, h2, h3, h4, h5, h6, p, span, div{
+            font-family: eSolutionFont !important;
+        }
+
+  
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+    text-align: center !important;
+  
+
+}
+
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    cursor: pointer;
+}
+
+
+.navbar{
+    background: rgb(255, 253, 255);
+background: linear-gradient(232deg, rgba(149,0,131,0.9164040616246498) 0%, rgba(4,3,0,0.9192051820728291) 0%, rgba(3,37,42,1) 54%, rgba(0,212,255,1) 49%, rgb(247, 247, 247) 40%);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.navbar a:hover {
+    color: #0bc0d4;
+    
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+   
+}
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+ 
+}
+.flex-48 {
+    width: 48%;
+    padding: 8%;
+}
+.flex-48 img {
+    width: 100%;
+    height: 100%;
+}
+.flex-48 h2 {
+    text-align: left;
+    font-size: 2rem;
+    padding-left: 12px;
+}
+.flex-48 p {
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+/* .containner {
+    max-width: 1300px;
+    padding: 1% 7%;
+    
+    display: flex;
+    justify-content: space-between;
+
+} */
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+    /* overflow: auto; */
+    padding: 10px 30px;
+}
+.half-container {
+    max-width: 573px;
+    margin: 0 auto;
+    padding: 10px 30px;
+
+}
+.half-container img {
+    margin-top: 20px;
+    
+ }
+/* .half-container img { 
+    display: inline-block;
+    height: 100%;
+} */
+.logo_Div {
+    width: 20%;
+
+}
+.logo_Div img {
+    width: auto;
+    height: 40px;
+    margin-top: 5%;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    list-style: none;
+    align-items: center;
+}
+nav ul li {
+    justify-self: center;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+nav ul li button {
+    display: inline-block;
+    background-color:#0bc0d4 ;
+    color: white;
+    font-size: 12px;
+    padding: 6px 20px;
+    border-radius: 25px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.uploadCV {
+    background-color: black;
+    outline: 1px solid ;
+   
+}
+
+.uploadCV button a:hover {
+    background-color: white;
+    color: black;
+}
+
+.quality {
+      background-color: #e6e6e6;
+      margin-top: 67px;
+}
+.quality i {
+    color: #0bc0d4;
+}
+.quality-wrapper {
+    display:flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.quality-items {
+    padding: 10px 10px;
+    color:#2d2d2d;
+}
+
+.Excellent-review {
+    display: none;
+    width: 40%;
+    /* display: flex; */
+    justify-content: center;
+
+}
+.showcase {
+    background-color:#0bc0d4;
+    text-align: center;
+    margin-top: 0px;
+    
+}
+.showcases {
+    /* background-color:#0bc0d4; */
+    text-align: center;
+    margin-top: 0px;
+    margin: 0 auto;
+    justify-items: center;
+}
+.black {
+    background: linear-gradient(232deg, rgba(149,0,131,0.9164040616246498) 0%, rgba(4,3,0,0.9192051820728291) 0%, rgba(3,37,42,1) 54%, rgba(3,37,42,1) 54%);
+ 
+}
+.showcase-flex {
+    display:flex;
+    justify-content: center;
+    gap :0px;
+    align-content: center;
+}
+.showcase-item {
+    width: 90%;
+    padding: 5% 0%;
+
+
+}
+.black-div {
+    background-color: #2d2d2d4f;
+    margin-top: -8px;
+}
+.showcase-item h1 {
+    color:black;
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    padding-bottom: 30px;
+}
+
+.showcase-item h5 {
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-bottom: 18px;
+}
+.showcase-item button {
+    background-color: black;
+    color: #e9ebe9;
+    border-radius: 20px;
+    padding: 7px 25px;
+    font-size: 1.5rem;
+}
+
+
+
+.black-flex {
+    background: linear-gradient(232deg, rgba(149,0,131,0.9164040616246498) 0%, rgba(4,3,0,0.9192051820728291) 0%, rgba(3,37,42,1) 54%, rgba(3,37,42,1) 54%);
+ 
+    display: flex;
+    width : 100%;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.employers-showcase {
+   background-color: #0bc0d4d0;
+    height: 300px;
+}
+.partners-logos {
+    background-color:  #e6e6e6;
+
+    /* margin-top: -8px; */
+
+}
+.partners-logos img {
+    width : 72%;
+    margin: 2% 14%;
+}
+.recruitment-roles {
+    margin-top: 150px;
+    margin: 2px auto;
+}
+
+.recruitment-roles h1 {
+
+      text-align: center;
+      /* padding: 3% 5%; */
+}
+.recruitment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap:20px;
+    margin: 2px auto;
+
+    
+}
+.recruit-div1 {
+    /* background-image: url('nurseReplicateImages/RGN-700x700.png');
+    background-position: top right; 
+  background-repeat: no-repeat; 
+  background-size: cover;  */
+  background: linear-gradient(232deg, rgba(149,0,131,0.9164040616246498) 0%, rgba(4,3,0,0.9192051820728291) 0%, rgba(3,37,42,1) 54%, rgba(3,37,42,1) 54%);
+  border-radius: 5px;
+  padding: 2px;
+  
+}
+
+.recruit-div1 img {
+    width:100%;
+    border-radius: 5px;
+}
+
+.recruit-div2 img {
+    width:100%;
+    border-radius: 5px;
+}
+
+.recruit-div3 img {
+    width:100%;
+    border-radius: 5px;
+}
+
+.recruit-div4 img {
+    width:100%;
+    border-radius: 5px;
+}
+.recruit-div2 {
+    /* background-image: url('nurseReplicateImages/Mental-Health-Nurse-700x700.png');
+    background-position: top right; 
+  background-repeat: no-repeat; 
+  background-size: cover;  */
+  background: linear-gradient(232deg, rgba(149,0,131,0.9164040616246498) 0%, rgba(4,3,0,0.9192051820728291) 0%, rgba(3,37,42,1) 54%, rgba(3,37,42,1) 54%);
+  border-radius: 5px;
+  padding: 2px;
+}
+.recruit-div3 {
+    /* background-image: url('nurseReplicateImages/health-care-assistant-700x467.jpg');
+    background-position: top left; 
+  background-repeat: no-repeat; 
+  background-size: cover;  */
+  background: linear-gradient(232deg, rgba(149,0,131,0.9164040616246498) 0%, rgba(4,3,0,0.9192051820728291) 0%, rgba(3,37,42,1) 54%, rgba(3,37,42,1) 54%);
+  border-radius: 5px;
+  padding: 2px;
+}
+.recruit-div4 {
+    /* background-image: url('nurseReplicateImages/nursing-3-700x467.jpg');
+    background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background: linear-gradient(232deg, rgba(149,0,131,0.9164040616246498) 0%, rgba(4,3,0,0.9192051820728291) 0%, rgba(3,37,42,1) 54%, rgba(3,37,42,1) 54%);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+
+.recruitment-grid h4 {
+    color :white;
+    text-align: center;
+    padding: 4% 0% 1% 0%;
+    letter-spacing: 0.4;
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+.recruitment-grid h3 {
+    color :white;
+    text-align: center;
+    padding: 6% 0% 1% 0%;
+    letter-spacing: 0.4;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 15px;
+}
+
+
+.recruitment-grid p {
+    color : white;
+    text-align: center;
+    padding: 2% 20%;
+    letter-spacing: 0.4;
+}
+
+
+.recruitment-grid button {
+    background-color: #0bc0d4;
+    color: black;
+    border-radius: 20px;
+    padding: 3px 20px;
+    font-weight: 700;
+    margin: 10px auto;
+}
+
+.connect-icons {
+    display: inline-block;
+    padding: 10px 60px;
+    font-size: 40px;
+}
+
+.text-introduction h1 {
+    text-align: center;
+    font-size: 48px;
+    padding:  5% 20%;
+}
+.text-introduction p {
+    text-align: center;
+    font-size: 18px;
+    padding:  1% 20%;
+}
+.grid  {
+display: grid;
+grid-template-columns: repeat(4, 24%);
+gap:10px;
+
+
+}
+
+.reviews {
+    background: #333333e7;
+    color: white;
+}
+
+.reviews h1, p {
+      text-align: center;
+      padding: 2% 5%;
+}
+
+.reviews  p {
+    text-align: center;
+}
+
+.partners-logo {
+    background: #33333315;
+   
+
+}
+.partners-logo img {
+    width : 72%;
+    margin: 2% 14%;
+}
+
+
+
+.jobs-posting  h1 {
+      text-align: center;
+      font-size: 50px;
+      padding: 7% 5%;
+}
+.browse-jobButton {
+    justify-content: center;
+}
+.browse-jobButton button {
+    background-color:#0bc0d4 ;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 4px 19px;
+    border-radius: 25px;
+    margin: 1% 40%;
+}
+
+.hiring button {
+    background-color:#0bc0d4 ;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 4px 19px;
+    border-radius: 25px;
+    margin: 1% 40%;
+}
+
+.jobsearch-icon {
+    padding-left: 2%;
+}
+.flex-column {
+    display: flex;
+    gap: 10px;
+}
+
+.job-form {
+    background-color: #e6e6e6;
+    width: 33%;
+    margin: 1px auto;
+    border-radius: 20px;
+
+}
+.job-form h5 {
+   text-align: center;
+   margin: 10px;
+   padding: 10px;
+  font-size: 1.5rem;
+}
+.job-form p {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+   font-size: 1rem;
+ }
+
+.job-form input {
+      width: 80%;
+     border: none;
+     border-radius: 30px;
+     padding: 5px 10px;
+     margin-left: 5px;
+}
+
+.job-form label {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 5px ;
+}
+
+.job-form button {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.job-grid {
+    width: 62%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap :5px;
+}
+
+.job-grid-item {
+    border:0.5px solid black;
+    border-radius: 20px;
+}
+.job-grid-item  h1{ 
+    color: #0bc0d4;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.jobName {
+   margin: 10px;
+}
+.job-grid-item p {
+    font-size: 14px;
+    text-align: left;
+}
+.job-grid-item ul li {
+    list-style: none;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.job-grid-item ul li i {
+    color: #0bc0d4;
+}
+
+.job-grid-item button {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 15px;
+    color: #2d2d2d;
+    margin: 10px;
+}
+
+.job-grid-item span {
+    display: inline-block;
+    background-color: #e6e4e4;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3px 3px;
+    color: #0bc0d4;
+    margin: 10px;
+}
+
+.button-icon-flex {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.share-icon {
+
+    display: inline-block;
+    padding: 20px;
+}
+
+.jobsearch-hiring {
+    /* background-image: url('nurseReplicateImages/seven-refer-bg.jpeg');
+    background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;  */
+  background: linear-gradient(232deg, rgba(149,0,131,0.9164040616246498) 0%, rgba(4,3,0,0.9192051820728291) 0%, rgba(3,37,42,1) 54%, rgba(3,37,42,1) 54%);
+}
+
+.brightness {
+    background-color: rgba(34, 32, 32, 0.322) ;
+    height: inherit;
+}
+.brightness-recruit {
+    background-color: rgba(34, 32, 32, 0.812) ;
+    height: inherit;
+    border-radius: 20px;
+}
+/* .jobsearch-hiring:after {
+    content: "";
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0; 
+    background: hsla(180,0%,50%,0.25);
+    pointer-events: none;
+  } */
+
+.double-flex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+    z-index: 2;
+    padding: 7%;
+}
+.jobsearch {
+    width: 50%;
+    border-right: 2px solid white;
+}
+.jobsearch h4 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 35px;
+
+}
+
+.jobsearch h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+
+}
+
+.jobsearch p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+.hiring {
+    width: 50%;
+    margin: 42px auto;
+    color: white !important;
+
+}
+
+.hiring h4 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 35px;
+   
+}
+
+.hiring h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 45px;
+
+}
+
+.hiring p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+.priortiseUK {
+    text-align: center;
+    color: #2d2d2d;
+}
+
+.priortiseUK h1 {
+    padding: 5%;
+    font-weight: 400;
+    font-size: 3rem;
+}
+.priortiseUK p {
+    padding: 1% 15%;
+    font-size: 1.3rem;
+}
+
+.services {
+    display: flex;
+    gap: 10px;
+    color: #2d2d2d;
+    text-align: center;
+}
+
+.services div {
+    width: 32%;
+    padding: 2%;
+}
+
+.services  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.services div p {
+    font-size: 16px;
+}
+
+.border-div {
+    border-left: 2px solid#2d2d2d;
+    border-right: 2px solid #2d2d2d;
+}
+
+.award-news {
+    background-color: #e6e6e6;
+}
+
+.award-news h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 700;
+    padding: 4% 8%;
+}
+
+.award-flex {
+    display : flex;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+/*.award-card {
+    width: 32%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: 20px;
+}*/
+
+ 
+.award-info > img {
+    width : 100%;
+   
+    border-radius: 20px 20px 0px 0px;
+}
+
+.award-info {
+    background-color: white;
+    text-align: left;
+    color: #2d2d2d;
+    padding: 0;
+    border-radius: 20px 20px 20px 20px ;
+}
+ 
+.award-info h4 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 4% 7%;
+}
+
+.award-info p {
+     font-size: 1rem;
+     text-align: left;
+     padding: 5% 7%;
+}
+
+.award-info p a {
+    display: inline-block;
+    font-size: 1rem;
+    text-align: left;
+    padding-top: 2% 6%;
+    text-decoration: none;
+    color: #0bc0d4;
+    font-weight: 700;
+}
+
+.secondPartners-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+}
+.secondPartners-logos  > div {
+    width: 14%;
+}
+
+.secondPartners-logos div img {
+    width : 100%;
+}
+
+.logo-header h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 5% 5%;
+}
+.logo-header {
+    padding: 5% 0;
+}
+.contactSection {
+    background: linear-gradient(232deg, rgba(149,0,131,0.9164040616246498) 0%, rgba(4,3,0,0.9192051820728291) 0%, rgba(3,37,42,1) 54%, rgba(3,37,42,1) 54%);
+
+    
+}
+
+.contactSection  h1 {
+      text-align: center;
+      color : white;
+      font-size: 3rem;
+      font-weight: 700;
+      padding: 5% 4%;
+}
+
+.pencil-sg {
+    width: 37%;
+    display: flex;
+    background-image: url('nurseReplicateImages/heph-removebg-preview.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+}
+.pencil-svg {
+    padding: 4% 0;
+    display : flex;
+    gap: 40px;
+}
+.form-one {
+    width: 30%;
+}
+
+
+.form-two {
+    width: 30%;
+}
+
+.form-label {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 9% 0%;
+}
+.form-input {
+      outline: 0;
+      border: 0;
+      border-bottom: 2px solid white;
+      background-color: inherit;
+      width: 100%;
+      padding: 4%;
+}
+
+
+.message {
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid white;
+    background-color: inherit;
+    width: 100%;
+    height: 215px;
+    padding: 4%;
+}
+.contact-btn {
+    display: inline-block;
+    background-color:#e9ebe9 ;
+    color: #2d2d2d;
+    font-size: 25px;
+    padding: 4px 23px;
+    border-radius: 25px;
+    margin: 3% 32%;
+}
+
+.contact-btn button a:hover {
+    background-color: #0bc0d4 ;
+}
+.footer-one {
+    background-color: rgba(0, 0, 0, 0.788);
+    color: gray;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+    margin: 5% auto;
+}
+
+.footer-flex-item {
+    width: 22%;
+
+}
+
+.footer-flex-item a:hover {
+    border-bottom: 1px solid #e9ebe9;
+}
+
+.footer-flex-item h6 {
+    text-align: left;
+    color:  #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 30px 0;
+}
+
+
+.footer-flex-item p {
+    text-align: left;
+    padding: 0%;
+    font-size: 0.9rem;
+    letter-spacing: 1.9;
+    font-weight: 200;
+    color: grey;
+}
+
+
+.footer-flex-item a {
+    text-decoration: none;
+    color: rgb(209, 205, 205);
+    font-weight: 200;
+}
+.resource {
+    width: 150px;
+    background-color: inherit;
+    color: #e6e6e6;
+    border-radius: 10px;
+    margin: 3px;
+    border: 1px solid white;
+    /* padding: 5px 7px; */
+    font-size: 0.5rem;
+}
+.resource img {
+    width: 100%;
+    height : 100%;
+   border-radius: 10px;
+}
+
+.footer-two {
+    background-color:rgba(0, 0, 0, 0.884); ;
+}
+
+.footer-two p {
+    text-align: left;
+    color: grey;
+}
+
+.footer-two a {
+    color: #e9ebe9;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-two a:hover {
+    border-bottom: 1px solid #e9ebe9;
+} 
+.grey-bg {
+    background-color: #e6e6e6;
+}
+
+.terms {
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+}
+/* MEDIA QUERIES*/
+.job-showcase {
+    margin: 3% auto;
+    text-align: center;
+    color:black ;
+}
+.employer-case {
+    
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+
+}
+.employer-case h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 100px auto;
+    padding-top: 7%;
+}
+.job-showcase h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 10px auto;
+}
+
+.job-showcase p {
+       font-size: 1rem;
+       font-family: 500;
+       padding-right: 15%;
+       padding-left: 15%;
+       
+}
+.input-job-title {
+    border: none;
+    border-radius: 20px 0 0 20px;
+    padding: 15px 40px;
+}
+.input-job-location {
+    border: none;
+    border-left: 1px solid #2d2d2d;
+    padding: 15px 40px;
+}
+
+.job-black-btn {
+    border: none;
+    padding: 15px 40px;
+    border-radius: 0 20px 20px 0;
+    background-color: black;
+    color: white;
+}
+.j-flex {
+    display: flex;
+    gap: 10px;
+}
+.j-suggests {
+    width: 38%;
+
+}
+.big-form {
+    width: 58%;
+    background-color: #e6e4e4;
+    border-radius: 40px;
+}
+
+.big-login-form {
+    width: 58%;
+    background-color: #0bc0d4;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+.flex-80 {
+    width: 80%;
+    margin: 40px auto;
+
+}
+
+.flex-80 input {
+     width: 100%;
+     border: none;
+     border-radius: 30px;
+     padding: 5px 10px;
+}
+
+.flex-80 label {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.flex-80 button {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.role-form {
+    background-color: #e6e4e4;
+}
+.job-role-form {
+    width: 90%;
+    display: flex;
+    margin: 70px auto;
+}
+.job-role-form input {
+     width: 50%;
+     border: none;
+     border-radius: 30px;
+     padding: 5px 10px;
+}
+
+.job-role-form label {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.first-role-form {
+    width: 50%;
+}
+.second-role-form {
+    width: 50%;
+}
+
+.second-role-form button {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 8px 15px;
+    margin: 28px 5px;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 1040px) {
+    .quality-wrapper {
+        display:flex;
+        justify-content: space-around;
+        font-size: 15px;
+    }
+    .quality-items {
+        padding: 10px 5px;
+        color:#2d2d2d;
+    }
+    .browse-jobButton button {
+        background-color:#0bc0d4 ;
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 4px 15px;
+        border-radius: 15px;
+        margin: 8% 40%;
+    }
+    .flex-48 {
+        width: 50%;
+        padding: 5%;
+    }
+
+}
+
+@media screen and (max-width: 971px)  {
+    .showcase-item h1 {
+        color:#2d2d2d;
+        font-weight: 700;
+        font-size: 3rem;
+        letter-spacing: 1px;
+        padding-bottom: 30px;
+    }
+    
+    .showcase-item h5 {
+        color: white;
+        font-weight: 300;
+        font-size: 1rem;
+        padding-bottom: 18px;
+    }
+    .showcase-item button {
+        background-color: #2d2d2d;
+        color: #e9ebe9;
+        border-radius: 20px;
+        padding: 7px 25px;
+        font-size: 1.5rem;
+    } 
+}
+            
+
+
+
+@media screen and (max-width: 942px) {
+          .hamburger {
+            display: block;
+          }
+          .hamburger .line {
+            width : 30px;
+            height: 3px;
+            background-color: white;
+            margin: 6px 0;
+          }
+
+         .nav-b {
+            height: 0;
+        position: absolute;
+         top:70px;
+         left:0;
+         right: 0;
+         width: 100%;
+         background-color: black;
+         transition: 0.3s;
+        }
+
+       .nav-b ul {
+            display: block;
+            width: fit-content;
+            margin: 70px auto 0 auto;
+            text-align: center;
+            transition: 0.5s;
+            opacity: 0 ;
+        }
+
+       .nav-b ul li a {
+            margin-bottom: 8px;
+            color: #0bc0d4;
+        }
+    .nav-b.active {
+        height : 400px;
+    }
+    .nav-b.active ul {
+        opacity: 1;
+    }
+
+    .browse-jobButton button {
+        background-color:#0bc0d4 ;
+        color: white;
+        font-size: 8px;
+        font-weight: 300;
+        padding: 4px 10px;
+        border-radius: 15px;
+        margin: 8% 30%;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    
+
+    .Excellent-review {
+        width: 100%;
+        /* display: flex; */
+        justify-items: center;
+    }
+
+    .flex-48 {
+        padding: 2%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .showcase-flex {
+        display: block;
+        margin: 2% auto;
+     }
+     .black-flex {
+        display: block;
+     }
+
+     .showcase-item {
+        width: 100%;
+     }
+
+
+     .hiring {
+        width: 100%;
+
+        border-top: 2px solid black;
+        padding-top: 5%;
+    }
+
+    .flex-space-around {
+        display: block;
+        justify-content: space-around;
+        margin: auto;
+     
+    }
+            .flex-48 {
+                width: 100% ;
+                justify-items: center;
+            }
+
+            .flex-48 h2 {
+                text-align: center;
+                justify-items: center;
+                font-size: 2rem;
+                 justify-self: center;
+               
+            } 
+
+            .flex-48 p {
+                text-align: center;
+                justify-items: center;
+                
+            } 
+            .pencil-sg {
+                width: 37%;
+                display: none;
+                background-image: url('nurseReplicateImages/contact-pen.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: center;
+            }
+            .pencil-svg {
+                padding: 4% 0;
+                display : flex;
+                gap: 40px;
+            }
+            .form-one {
+                width: 50%;
+            }
+            
+            
+            .form-two {
+                width: 50%;
+            }
+            .message {
+                outline: 0;
+                border: 0;
+                border-bottom: 2px solid rgb(7, 7, 7);
+                background-color: inherit;
+                width: 100%;
+                height: 215px;
+                padding: 4%;
+                color: white;
+            }
+            
+            .text-introduction h1 {
+                text-align: center;
+                font-size: 38px;
+                padding:  5% 15%;
+            }
+            .text-introduction p {
+                text-align: center;
+                font-size: 18px;
+                padding:  1% 15%;
+            }
+
+}
+
+@media screen and (max-width: 768px) { 
+}
+
+
+
+
+
+@media screen and (max-width: 665px) { 
+    .job-showcase h1 {
+        font-weight: 400;
+        font-size: 2rem;
+        padding: 10px auto;
+    }
+    
+    .job-showcase p {
+           font-size: 1rem;
+           font-family: 500;
+           padding-right: 15%;
+           padding-left: 15%;
+           
+    }
+    .input-job-title {
+        width: 100%;
+        border: none;
+        border-radius: 20px 20px 20px 20px;
+        padding: 15px 40px;
+    }
+    .input-job-location {
+        width: 100%;
+        border: none;
+        border-left: 1px solid #2d2d2d;
+        padding: 15px 40px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    
+    .job-black-btn {
+        border: none;
+        padding: 15px 40px;
+        border-radius: 20px 20px 20px 20px;
+        background-color: black;
+        color: white;
+    }
+
+}
+
+@media screen and (max-width: 674px) {
+         .showcase-flex {
+            display: block;
+            margin: 2% auto;
+         }
+         .black-flex {
+            display: block;
+         }
+         .showcase-item {
+            width: 100%;
+         }
+    .services {
+        display: block;
+        gap: 10px;
+        color: #2d2d2d;
+        text-align: center;
+    }
+    
+    .services div {
+        width: 100%;
+        padding: 5%;
+    }
+    
+    .services  h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .services div p {
+        font-size: 16px;
+    }
+    .border-div {
+        border:none;
+    }
+
+    .award-news h1 {
+        text-align: center;
+        font-size: 4rem;
+        font-family: 700;
+        padding: 4% 8%;
+    }
+    
+    .award-flex {
+        display : block;
+        gap: 10px;
+        justify-content: center;
+        align-content: center;
+    }
+    
+     
+    .award-info > img {
+        width : 100%;
+       
+        border-radius: 20px 20px 0px 0px;
+    }
+    
+    .award-info {
+        background-color: white;
+        text-align: left;
+        color: #2d2d2d;
+        padding: 0;
+        border-radius: 20px 20px 20px 20px ;
+    }
+     
+    .award-info h4 {
+        font-weight: 700;
+        font-size: 1.3rem;
+        text-align: left;
+        padding: 4% 7%;
+    }
+    
+    .award-info p {
+         font-size: 1rem;
+         text-align: left;
+         padding: 5% 7%;
+    }
+    
+    .award-info p a {
+        display: inline-block;
+        font-size: 1rem;
+        text-align: left;
+        padding-top: 2% 6%;
+        text-decoration: none;
+        color: #0bc0d4;
+        font-weight: 700;
+    }
+    
+.double-flex {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+    z-index: 2;
+    padding: 7%;
+}
+.jobsearch {
+    width: 100%;
+    border-right: none;
+}
+    .hiring {
+        width: 100%;
+
+        border-top: 2px solid black;
+        padding-top: 5%;
+    }
+    .flex-column {
+        display: block;
+        gap: 10px;
+    }
+    
+    .job-form {
+        background-color: #e6e6e6;
+        width: 100%;
+        margin: 15px auto;
+        border-radius: 20px;
+    
+    }
+    .job-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap :5px;
+    }
+    .recruitment-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap:10px;
+    
+        
+    }
+    .footer-flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:5px;
+        margin: 5% auto;
+    }
+    
+    .footer-flex-item {
+        width: 22%;
+        font-size: 12px;
+    
+    }
+    .text-introduction h1 {
+        text-align: center;
+        font-size: 15px;
+        padding:  5% 2%;
+    }
+    .text-introduction p {
+        text-align: center;
+        font-size: 12px;
+        padding:  1% 2%;
+    }
+    .job-role-form input {
+        width: 100%;
+        border: none;
+        border-radius: 30px;
+        padding: 5px 10px;
+   }
+   
+   .job-role-form label {
+       font-size: 1rem;
+       font-weight: 400;
+       margin-top: 5px;
+   }
+   .first-role-form {
+       width: 100%;
+   }
+   .second-role-form {
+       width: 100%;
+   }
+   .j-flex {
+    display: block;
+    gap: 10px;
+}
+.j-suggests {
+    width: 100%;
+
+}
+.big-form {
+    width: 100%;
+    background-color: #e6e4e4;
+    border-radius: 40px;
+}
+    
+}
+
+@media screen and (max-width: 731px)  {
+    .showcase-item h1 {
+        color:#2d2d2d;
+        font-weight: 700;
+        font-size: 4rem;
+        letter-spacing: 1px;
+        padding-bottom: 30px;
+    }
+    
+    .showcase-item h5 {
+        color: white;
+        font-weight: 300;
+        font-size: 1rem;
+        padding-bottom: 18px;
+    }
+    .showcase-item button {
+        background-color: #2d2d2d;
+        color: #e9ebe9;
+        border-radius: 20px;
+        padding: 7px 25px;
+        font-size: 1.5rem;
+    } 
+}
+
+@media screen and (max-width: 556px) {
+
+    .job-grid {
+        width: 80%;
+        display: block;
+        margin: 3% auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap :5px;
+    }
+
+     .job-grid-item {
+        margin-top: 5%;
+     }
+
+
+     .showcase-item h1 {
+        color:#2d2d2d;
+        font-weight: 700;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        padding-bottom: 30px;
+    }
+    
+    .showcase-item h5 {
+        color: white;
+        font-weight: 300;
+        font-size: 1.2rem;
+        padding-bottom: 20px;
+    }
+    .showcase-item button {
+        background-color: #2d2d2d;
+        color: #e9ebe9;
+        border-radius: 20px;
+        padding: 7px 25px;
+        font-size: 1.5rem;
+    }
+    .pencil-svg {
+        padding: 4% 0;
+        display : block;
+        gap: 40px;
+    }
+    .form-one {
+        width: 100%;
+    }
+    
+    
+    .form-two {
+        width: 100%;
+    }
+    /* .recruitment-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap:10px;
+    
+        
+    } */
+    .footer-flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:5px;
+        margin: 5% auto;
+    }
+    
+    .footer-flex-item {
+        width: 40%;
+        font-size: 12px;
+    
+    }
+    .job-role-form {
+        width: 100%;
+        display: flex;
+        margin: 70px auto;
+    }
+    .job-role-form input {
+         width: 100%;
+         border: none;
+         border-radius: 30px;
+         padding: 5px 10px;
+    }
+    
+    .job-role-form label {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+    .first-role-form {
+        width: 100%;
+    }
+    .second-role-form {
+        width: 100%;
+    }
+    
+    .second-role-form button {
+        background-color: #2d2d2d;
+        color: white;
+        padding: 8px 15px;
+        margin: 28px 5px;
+        border-radius: 10px;
+    }
+    .big-login-form {
+        width: 88%;
+        background-color: #0bc0d4;
+        border-radius: 40px;
+        margin: 0 auto;
+    }
+  
+}
+
+@media screen and (max-width: 473px) {
+    .recruitment-roles h1 {
+        font-size: 1rem;
+        text-align: center;
+        padding: 3% 5%;
+  }
+  .text-introduction h1 {
+    text-align: center;
+    font-size: 23px;
+    padding:  5% 2%;
+}
+.text-introduction p {
+    text-align: center;
+    font-size: 12px;
+    padding:  1% 2%;
+}
+.reviews h1 {
+    text-align: center;
+    padding: 2% 5%;
+    font-size: 20px;
+}
+
+.reviews  p {
+  text-align: center;
+  font-size: 15px;
+}
+.jobs-posting h1 {
+    font-size: 23px;
+}
+.jobsearch-icon {
+    padding-left: 0%;
+}   
+.priortiseUK h1 {
+    padding: 5%;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.priortiseUK p {
+    padding: 1% 5%;
+    font-size: 1rem;
+}
+.award-news h1 {
+    font-size: 1rem;
+}
+.pencil-svg {
+    padding: 4% 0;
+    display : block;
+    gap: 40px;
+}
+.form-one {
+    width: 100%;
+}
+
+
+.form-two {
+    width: 100%;
+}
+.message {
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid rgb(7, 7, 7);
+    background-color: inherit;
+    width: 100%;
+    height: 215px;
+    padding: 4%;
+}
+.job-role-form input {
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+.job-role-form label {
+   font-size: 1rem;
+   font-weight: 400;
+   margin-top: 5px;
+}
+.first-role-form {
+   width: 100%;
+}
+.second-role-form {
+   width: 100%;
+}
+.job-role-form {
+    width: 90%;
+    display: block;
+    margin: 70px auto;
+}
+}
+
+@media screen and (max-width: 465px) 
+{
+    .container{
+      
+        padding: 10px 10px;
+    }
+
+
+    .half-container {
+        max-width: 473px;
+        margin: 0 auto;
+        padding: 10px 30px;
+    
+    }
+    .half-container img {
+        margin-top: 20px;
+        width: 100%;
+        
+     }
+
+}
+
+@media screen and (max-width: 461px) {
+
+.navbar{
+    background: rgb(255, 253, 255);
+    /* background: linear-gradient(232deg, rgba(149,0,131,0.9164040616246498) 0%, rgba(4,3,0,0.9192051820728291) 0%, rgba(3,37,42,1) 0%, rgba(0,212,255,1) 0%, rgb(247, 247, 247) 96%); */
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  
+}
+
+
+.hamburger .line {
+    width : 30px;
+    height: 3px;
+    background-color: #0bc0d4;
+    margin: 6px 0;
+  }
+
+}
+
+
+@media screen and (max-width: 455px) {
+    .navbar {
+        background-color: white;
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+      
+    }
+
+}
+
+@media screen and (max-width: 373px)
+{
+    .recruitment-grid {
+        display: block;
+        grid-template-columns: repeat(1, 50%);
+        gap:10px;
+    
+        
+    }
+
+    .recruit-div1, .recruit-div2, .recruit-div3, .recruit-div4 {
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 789px)
+{
+
+    .half-container {
+        max-width: 473px;
+        margin: 0 auto;
+        padding: 10px;
+    
+    }
+    .half-container img {
+        margin-top: 20px;
+        
+     }
+
+
+}
